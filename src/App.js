@@ -20,7 +20,7 @@ class App extends Component {
                     <div className="col-sm-6" style={{ backgroundColor: 'lightgray', minHeight: "500px" }}>
                         <div className="row p-2">
                             {imagesNameCollection.map((data, key) => {
-                                return <div className="col-sm-2"><img width="78px" src={require("./images/" + data)} /></div>
+                                return <DragDropContainer className="col-sm-2"><img width="78px" src={require("./images/" + data)} /></DragDropContainer>
                             })}
                         </div>
                     </div>
